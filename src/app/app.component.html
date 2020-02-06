@@ -8,5 +8,8 @@
         <li>When stopping the game, numbers stop emitting</li>
       </ol>
     </div>
+  <app-game (intervalFired)="onIntervalFired($event)"></app-game>
+  <app-even [intervalNumber]= even *ngFor="let even of evenArray"> </app-even>
+  <app-odd  [intervalNumber]= odd *ngFor="let odd of oddArray"> </app-odd>
   </div>
-  <app-game></app-game>
+  
